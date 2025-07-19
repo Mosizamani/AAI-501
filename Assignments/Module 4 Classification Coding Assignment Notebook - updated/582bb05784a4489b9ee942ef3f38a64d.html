@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>c908690eec3b4fad94519c2b6a3c0305</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="cell markdown">
+<p>Assignment week 4</p>
+<p>Mostafa Zamaniturk</p>
+</div>
+<section id="classification-using-scikit-learn" class="cell markdown"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-623ecb49dce2cff2&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<h1>Classification Using Scikit-learn</h1>
+<p>In this homework you will learn how to build a basic supervised
+learning algorithm (classification) using the most popular Python
+machine learning library, scikit-learn. You will follow the 3 canonical
+steps for building a model:</p>
+<p>1) Data preparation 2) Model fitting 3) Model evaluation &amp;
+selection</p>
+<p>We will use the World Happiness Report (WHR) data, bringing in some
+additional information that will enable us to formulate a classification
+problem to predict categorical labels on the dataset.</p>
+</section>
+<section id="data-preparation" class="cell markdown">
+<h1>Data Preparation</h1>
+</section>
+<div class="cell markdown">
+<p>Execute the code cell below to import some modules and read in and
+preprocess the WHR data. The last line in the code cell below returns
+the head of the basic WHR dataframe, to show you what is in that
+dataset.</p>
+</div>
+<div class="cell code" data-execution_count="51"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-528dcd796b7a9020&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>dfraw <span class="op">=</span> pd.read_excel(<span class="st">&#39;WHR2018Chapter2OnlineData.xls&#39;</span>, sheet_name<span class="op">=</span><span class="st">&#39;Table2.1&#39;</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>cols_to_include <span class="op">=</span> [<span class="st">&#39;country&#39;</span>, <span class="st">&#39;year&#39;</span>, <span class="st">&#39;Life Ladder&#39;</span>, </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>                   <span class="st">&#39;Positive affect&#39;</span>,<span class="st">&#39;Negative affect&#39;</span>,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>                   <span class="st">&#39;Log GDP per capita&#39;</span>, <span class="st">&#39;Social support&#39;</span>,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>                   <span class="st">&#39;Healthy life expectancy at birth&#39;</span>, </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>                   <span class="st">&#39;Freedom to make life choices&#39;</span>, </span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>                   <span class="st">&#39;Generosity&#39;</span>, <span class="st">&#39;Perceptions of corruption&#39;</span>]</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>renaming <span class="op">=</span> {<span class="st">&#39;Life Ladder&#39;</span>: <span class="st">&#39;Happiness&#39;</span>, </span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;Log GDP per capita&#39;</span>: <span class="st">&#39;LogGDP&#39;</span>, </span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;Social support&#39;</span>: <span class="st">&#39;Support&#39;</span>, </span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;Healthy life expectancy at birth&#39;</span>: <span class="st">&#39;Life&#39;</span>, </span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;Freedom to make life choices&#39;</span>: <span class="st">&#39;Freedom&#39;</span>, </span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;Perceptions of corruption&#39;</span>: <span class="st">&#39;Corruption&#39;</span>, </span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;Positive affect&#39;</span>: <span class="st">&#39;Positive&#39;</span>, </span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;Negative affect&#39;</span>: <span class="st">&#39;Negative&#39;</span>}</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> dfraw[cols_to_include].rename(renaming, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>key_vars <span class="op">=</span> [<span class="st">&#39;Happiness&#39;</span>, <span class="st">&#39;LogGDP&#39;</span>, <span class="st">&#39;Support&#39;</span>, <span class="st">&#39;Life&#39;</span>, <span class="st">&#39;Freedom&#39;</span>, <span class="st">&#39;Generosity&#39;</span>, <span class="st">&#39;Corruption&#39;</span>, <span class="st">&#39;Positive&#39;</span>, <span class="st">&#39;Negative&#39;</span>]</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="51">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>year</th>
+      <th>Happiness</th>
+      <th>Positive</th>
+      <th>Negative</th>
+      <th>LogGDP</th>
+      <th>Support</th>
+      <th>Life</th>
+      <th>Freedom</th>
+      <th>Generosity</th>
+      <th>Corruption</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Afghanistan</td>
+      <td>2008</td>
+      <td>3.723590</td>
+      <td>0.517637</td>
+      <td>0.258195</td>
+      <td>7.168690</td>
+      <td>0.450662</td>
+      <td>49.209663</td>
+      <td>0.718114</td>
+      <td>0.181819</td>
+      <td>0.881686</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Afghanistan</td>
+      <td>2009</td>
+      <td>4.401778</td>
+      <td>0.583926</td>
+      <td>0.237092</td>
+      <td>7.333790</td>
+      <td>0.552308</td>
+      <td>49.624432</td>
+      <td>0.678896</td>
+      <td>0.203614</td>
+      <td>0.850035</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Afghanistan</td>
+      <td>2010</td>
+      <td>4.758381</td>
+      <td>0.618265</td>
+      <td>0.275324</td>
+      <td>7.386629</td>
+      <td>0.539075</td>
+      <td>50.008961</td>
+      <td>0.600127</td>
+      <td>0.137630</td>
+      <td>0.706766</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Afghanistan</td>
+      <td>2011</td>
+      <td>3.831719</td>
+      <td>0.611387</td>
+      <td>0.267175</td>
+      <td>7.415019</td>
+      <td>0.521104</td>
+      <td>50.367298</td>
+      <td>0.495901</td>
+      <td>0.175329</td>
+      <td>0.731109</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Afghanistan</td>
+      <td>2012</td>
+      <td>3.782938</td>
+      <td>0.710385</td>
+      <td>0.267919</td>
+      <td>7.517126</td>
+      <td>0.520637</td>
+      <td>50.709263</td>
+      <td>0.530935</td>
+      <td>0.247159</td>
+      <td>0.775620</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="step-1" class="cell markdown"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-114766d8d149ad20&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<h3>Step 1.</h3>
+<p>First, we will augment the core WHR dataset to bring in some
+additional information that is included in a different worksheet. Since
+this is mostly about data processing rather than machine learning,
+simply execute the next two code cells below. But study each line of
+code and the associated comments, and then examine the head of the new
+dataframe named <code>df2</code> to understand what has been done.</p>
+</section>
+<div class="cell code" data-execution_count="52"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-4961999f914bb49e&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># read in data from SupportingFactors worksheet into a new dataframe dfsupp</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>dfsupp <span class="op">=</span> pd.read_excel(<span class="st">&#39;WHR2018Chapter2OnlineData.xls&#39;</span>, sheet_name<span class="op">=</span><span class="st">&#39;SupportingFactors&#39;</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># extract out region information from SupportingFactors dataframe</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>regions <span class="op">=</span> dfsupp[[<span class="st">&#39;country&#39;</span>, <span class="st">&#39;Region indicator&#39;</span>]].rename({<span class="st">&#39;Region indicator&#39;</span>: <span class="st">&#39;region&#39;</span>}, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># examine head of regions dataframe -- each country has an associated world region</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>regions.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="52">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>region</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Afghanistan</td>
+      <td>South Asia</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Albania</td>
+      <td>Central and Eastern Europe</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Algeria</td>
+      <td>Middle East and North Africa</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Angola</td>
+      <td>Sub-Saharan Africa</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Argentina</td>
+      <td>Latin America and Caribbean</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="53"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-04c2e566637e8957&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># compute the mean values of all the WHR data for each country, averaging over all years in the dataset</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>dfmean <span class="op">=</span> df.groupby(<span class="st">&#39;country&#39;</span>).mean().drop(<span class="st">&#39;year&#39;</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># merge the mean WHR data with the region information extracted previously</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>df2 <span class="op">=</span> pd.merge(dfmean, regions, on<span class="op">=</span><span class="st">&#39;country&#39;</span>).dropna()</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># set the index of df2 to be the country name</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>df2.set_index(<span class="st">&#39;country&#39;</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># examine head of df2 dataframe -- mean WHR values for each country, along with associated regions</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>df2.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="53">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Happiness</th>
+      <th>Positive</th>
+      <th>Negative</th>
+      <th>LogGDP</th>
+      <th>Support</th>
+      <th>Life</th>
+      <th>Freedom</th>
+      <th>Generosity</th>
+      <th>Corruption</th>
+      <th>region</th>
+    </tr>
+    <tr>
+      <th>country</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Afghanistan</th>
+      <td>3.806614</td>
+      <td>0.580873</td>
+      <td>0.301283</td>
+      <td>7.419697</td>
+      <td>0.517146</td>
+      <td>50.838271</td>
+      <td>0.544895</td>
+      <td>0.118428</td>
+      <td>0.826794</td>
+      <td>South Asia</td>
+    </tr>
+    <tr>
+      <th>Albania</th>
+      <td>4.988791</td>
+      <td>0.642628</td>
+      <td>0.303256</td>
+      <td>9.247059</td>
+      <td>0.723204</td>
+      <td>68.027213</td>
+      <td>0.626155</td>
+      <td>-0.105019</td>
+      <td>0.859691</td>
+      <td>Central and Eastern Europe</td>
+    </tr>
+    <tr>
+      <th>Algeria</th>
+      <td>5.555004</td>
+      <td>0.616524</td>
+      <td>0.265460</td>
+      <td>9.501728</td>
+      <td>0.804633</td>
+      <td>64.984461</td>
+      <td>0.536398</td>
+      <td>-0.208236</td>
+      <td>0.661478</td>
+      <td>Middle East and North Africa</td>
+    </tr>
+    <tr>
+      <th>Angola</th>
+      <td>4.420299</td>
+      <td>0.613339</td>
+      <td>0.351173</td>
+      <td>8.713935</td>
+      <td>0.737973</td>
+      <td>51.729801</td>
+      <td>0.455957</td>
+      <td>-0.077940</td>
+      <td>0.867018</td>
+      <td>Sub-Saharan Africa</td>
+    </tr>
+    <tr>
+      <th>Argentina</th>
+      <td>6.406131</td>
+      <td>0.840998</td>
+      <td>0.273187</td>
+      <td>9.826051</td>
+      <td>0.906080</td>
+      <td>66.764205</td>
+      <td>0.753122</td>
+      <td>-0.154544</td>
+      <td>0.844038</td>
+      <td>Latin America and Caribbean</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="step-2" class="cell markdown"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-3ebf9c19dc4374f7&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<h3>Step 2.</h3>
+<p>This new dataframe <code>df2</code> is what we want to use for our
+machine learning task. For each country in the dataset, we have a set of
+numerical values ('Happiness', 'Positive', 'Negative', etc., which are
+all listed in the variable <code>key_vars</code>) and a categorical
+value ('region'). We would like to know if the raw numerical data are
+predictive of the region. In other words, if someone gave you a set of
+numerical data on Happiness, etc. for an unknown country, would you be
+able to predict what region of the world it might be located in? This is
+an example of classification, where we will train a model based on the
+numerical data and the associated labels (regions).</p>
+<p>In order to proceed, we first want to extract and process some data
+from our <code>df2</code> dataframe. We need to separate the data into
+two parts:</p>
+<ul>
+<li>the region data that we want to be able to predict (we'll call it
+<code>y</code>)</li>
+<li>the WHR numerical data that we want to use as input to our
+prediction (we'll call it <code>x</code>)</li>
+</ul>
+<p>Again, our goal is to build a classifier that we will train on a
+subset of the WHR numerical data (x) and the region data (y), so that we
+can predict regions from data for countries that we have not trained our
+model on.</p>
+<p>In the code cell below:</p>
+<ul>
+<li>Extract the subset of <code>df2</code> associated with the columns
+in <code>key_vars</code> and assign it to the variable
+<code>x</code>.</li>
+<li>Extract the subset of <code>df2</code> associated with the region
+column, and assign it to the variable <code>y</code>.</li>
+<li>Print the shape of both <code>x</code> and <code>y</code>.</li>
+</ul>
+</section>
+<section id="graded-cell" class="cell markdown">
+<h2>Graded Cell</h2>
+<p>This cell is worth 5% of the grade for this assignment.</p>
+</section>
+<div class="cell code" data-execution_count="54"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-01ec5c8a944da95a&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df2.columns</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>key_vars <span class="op">=</span> [<span class="st">&#39;Happiness&#39;</span>, <span class="st">&#39;Positive&#39;</span>, <span class="st">&#39;Negative&#39;</span>, <span class="st">&#39;LogGDP&#39;</span>, <span class="st">&#39;Support&#39;</span>, <span class="st">&#39;Life&#39;</span>,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>       <span class="st">&#39;Freedom&#39;</span>, <span class="st">&#39;Generosity&#39;</span>, <span class="st">&#39;Corruption&#39;</span>]</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> df2[key_vars]</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> df2[<span class="st">&#39;region&#39;</span>]</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x.shape)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y.shape)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>(152, 9)
+(152,)
+</code></pre>
+</div>
+</div>
+<section id="step-3" class="cell markdown"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-c7c2b22581801780&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<h3>Step 3.</h3>
+<p>You should see that the shape of <code>x</code> is (152, 9) and the
+shape of <code>y</code> is (152,). There are 152 samples (countries),
+and 9 features (each of the key_vars) that we are using to make
+predictions.</p>
+<p>Note that the numerical data columns in <code>x</code> represent
+different quantities and have different scales. A key step in machine
+learning is <em>standardization</em>: the transformation of features to
+be on the same scale (with a mean of 0 and a standard deviation of 1).
+Standardization can substantially increase model accuracy, performance
+and interpretability.</p>
+<p><code>sklearn</code> provides various utilities to perform
+standardization. We will use one here called
+<code>StandardScaler</code>, which will transform a data set so that
+each resulting column has zero mean and unit standard deviation.</p>
+<p>Carrying out this scaling is a little complicated if we want to
+maintain the basic structure of our dataframe, so we have provided the
+relevant code in the next code cell below. (The code examples describing
+StandardScaler in the <a
+href="https://scikit-learn.org/stable/modules/preprocessing.html#preprocessing-scaler">sklearn
+documentation</a> typically just extract out the numerical values in
+numpy arrays. For this exercise, we'd like to keep the labels together
+in a dataframe.)</p>
+<p>Please perform the following steps in the below graded cell:</p>
+<ul>
+<li>Import the <code>StandardScaler</code> object</li>
+<li>Create and fit a <code>StandardScaler</code> object to our dataframe
+<code>x</code></li>
+<li>Create a new dataframe <code>x_scaled</code> that contains the
+scaled (transformed) data, using the column and index labels from our
+unscaled dataframe <code>x</code></li>
+<li>Print out the mean and standard deviation of each column of
+<code>x_scaled</code></li>
+<li>Peek at the head of the new dataframe <code>x_scaled</code></li>
+</ul>
+<p>In examining the output, check that the means of each column have
+been scaled to nearly zero (to within a very small tolerance) and the
+standard deviations have been scaled to one. Some of the very small
+numbers might be printed out in scientific notation, where a number like
+<code>1.928282e-16</code> means <code>1.928282 * 10**(-16)</code>.</p>
+</section>
+<section id="graded-cell" class="cell markdown">
+<h2>Graded Cell</h2>
+<p>This cell is worth 20% of the grade for this assignment.</p>
+</section>
+<div class="cell code" data-execution_count="55"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-54c74ff720e1fb98&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Import the StandardScaler</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Create the scaler object</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>scaler <span class="op">=</span> StandardScaler()</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Fit the scaler to the data and transform it</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>x_scaled_array <span class="op">=</span> scaler.fit_transform(x)  <span class="co"># This returns a NumPy array</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Create a new dataframe with the same columns and index as original x</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>x_scaled <span class="op">=</span> pd.DataFrame(x_scaled_array, columns<span class="op">=</span>x.columns, index<span class="op">=</span>x.index)</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Print mean and standard deviation of each column</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Means after scaling</span><span class="ch">\n</span><span class="st">&quot;</span>, x_scaled.mean())</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Standard Deviations after scaling:</span><span class="ch">\n</span><span class="st">&quot;</span>, x_scaled.std())</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="co"># 6. Peek at the first few rows</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Head of scaled data:&quot;</span>)</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x_scaled.head())</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Means after scaling
+ Happiness     1.782200e-16
+Positive      1.811417e-16
+Negative      2.337312e-16
+LogGDP        6.135443e-17
+Support      -2.337312e-16
+Life         -5.843279e-17
+Freedom       6.748987e-16
+Generosity    1.168656e-17
+Corruption    9.349247e-17
+dtype: float64
+Standard Deviations after scaling:
+ Happiness     1.003306
+Positive      1.003306
+Negative      1.003306
+LogGDP        1.003306
+Support       1.003306
+Life          1.003306
+Freedom       1.003306
+Generosity    1.003306
+Corruption    1.003306
+dtype: float64
+
+Head of scaled data:
+             Happiness  Positive  Negative    LogGDP   Support      Life  \
+country                                                                    
+Afghanistan  -1.443128 -1.262731  0.471370 -1.438896 -2.425953 -1.333584   
+Albania      -0.360792 -0.638194  0.499009  0.054466 -0.681799  0.776161   
+Algeria       0.157600 -0.902184 -0.030449  0.262588  0.007447  0.402698   
+Angola       -0.881273 -0.934399  1.170248 -0.381215 -0.556782 -1.224159   
+Argentina     0.936845  1.367958  0.077797  0.527632  0.866136  0.621142   
+
+              Freedom  Generosity  Corruption  
+country                                        
+Afghanistan -1.397623    0.735439    0.451854  
+Albania     -0.776670   -0.719736    0.632648  
+Algeria     -1.462554   -1.391919   -0.456675  
+Angola      -2.077245   -0.543385    0.672914  
+Argentina    0.193546   -1.042257    0.546624  
+</code></pre>
+</div>
+</div>
+<section id="model-fitting" class="cell markdown">
+<h1>Model Fitting</h1>
+</section>
+<section id="step-4" class="cell markdown"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-120c4b66e20c858b&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<h3>Step 4.</h3>
+<p>Now that the data has been preprocessed, we can begin with our
+classification analysis. Let's start by importing some additional tools
+from <code>sklearn</code>. Execute the code cell below to import:</p>
+<ul>
+<li>the <code>svm</code> and <code>tree</code> submodules</li>
+<li>the <code>train_test_split</code> function</li>
+<li>the <code>accuracy_score</code> function</li>
+</ul>
+<p>We'll discuss in more detail below what each of these does.</p>
+</section>
+<div class="cell code" data-execution_count="56"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-7b61fbfb465b7fba&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn <span class="im">import</span> svm, tree</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> accuracy_score</span></code></pre></div>
+</div>
+<section id="step-5" class="cell markdown"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-9e4b3a68ad0f3755&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<h3>Step 5.</h3>
+<p>One of the convenience functions that we imported above is called
+<code>train_test_split</code>. As its name suggests, this function
+splits a dataset into separate training and testing sets. The <a
+href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html?highlight=train_test_split#sklearn-model-selection-train-test-split">online
+documentation</a> indicates that it splits a dataset randomly, such that
+approximately 25% of the data winds up in the test set and the remaining
+75% in the training set. Note that the documentation is a bit confusing,
+since the function can take a variable number of arrays as inputs. In
+our case, we want to split up 2 arrays (<code>x_scaled</code> and
+<code>y</code>) into coordinated test and train sets, so that the
+function will return a total of 4 subarrays
+(<code>x_train, x_test, y_train, y_test</code>).</p>
+<p>Because <code>train_test_split</code> generates random splits of the
+input data, each time we call the function we will get a different
+split. For the purposes of code development, it's useful to be able to
+get reproducible random numbers or random splits, as it makes debugging
+and model improvements much easer. This can then be relaxed once one
+wishes to generate statistics over many random runs. With
+<code>train_test_split</code>, this can be accomplished by using the
+<code>random_state</code> option; if specified with that state as an
+integer, then the same random split will be generated each time the
+function is called (until one changes the value of the integer). This is
+known as providing a seed to the pseudo-random number generator that is
+used by <code>train_test_split</code>.</p>
+<p>You may enter and execute a call to <code>train_test_split</code>
+that takes <code>x_scaled</code> and <code>y</code> as inputs, along
+with the optional parameter <code>random_state=0</code>, and returns the
+4 data subsets mentioned above, to be named as <code>x_train</code>,
+<code>x_test</code>, <code>y_train</code>, <code>y_test</code>. The
+online documentation provides an example of what such a function call
+looks like. After the function call, print the shapes of each of the
+four arrays that are returned.</p>
+<p>At first pass, it makes sense to simply apply
+<code>train_test_split()</code> directly to <code>x_scaled</code> and
+<code>y</code>; however, there is a subtle downside. Performing
+standardization prior to <code>train_test_split()</code> potentially
+leads to 'information leakage' whereby information about the testing
+dataset (its underlying distribution) is learned during the training
+phase. This is because the testing data distribution is used to scale
+the training dataset.</p>
+<p>In the code cell below, please perform
+<code>train_test_split()</code> first before applying
+<code>StandardScaler().fit()</code> <em>only</em> to the training
+dataset. Use that fit to transform the training dataset and the testing
+dataset separately. Ultimately, you should end up with the variables
+<code>x_train_scale</code>, <code>x_test_scale</code>,
+<code>y_train</code> and <code>y_test</code>.</p>
+</section>
+<section id="graded-cell" class="cell markdown"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-7ba571e171fc1adf&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<h2>Graded Cell</h2>
+<p>This cell is worth 5% of the grade for this assignment.</p>
+</section>
+<div class="cell code">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Split the original, unscaled data</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>x_train, x_test, y_train, y_test <span class="op">=</span> train_test_split(</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    x_scaled, y,</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    test_size<span class="op">=</span><span class="fl">0.25</span>,</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    random_state<span class="op">=</span><span class="dv">87</span>,</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    shuffle<span class="op">=</span><span class="va">True</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the scaler object</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>scaler <span class="op">=</span> StandardScaler()</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit the scaler on the training data only</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>scaler.fit(x_train)</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Transform both training and test data</span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>x_train_scale <span class="op">=</span> scaler.transform(x_train)</span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>x_test_scale <span class="op">=</span> scaler.transform(x_test)</span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Print shapes</span></span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;x_train_scale shape:&quot;</span>, x_train_scale.shape)</span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;x_test_scale shape:&quot;</span>, x_test_scale.shape)</span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;y_train shape:&quot;</span>, y_train.shape)</span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;y_test shape:&quot;</span>, y_test.shape)</span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(y_test)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>x_train_scale shape: (114, 9)
+x_test_scale shape: (38, 9)
+y_train shape: (114,)
+y_test shape: (38,)
+country
+Gabon                                 Sub-Saharan Africa
+Chile                        Latin America and Caribbean
+Angola                                Sub-Saharan Africa
+Malawi                                Sub-Saharan Africa
+Burundi                               Sub-Saharan Africa
+United States                      North America and ANZ
+Mauritania                            Sub-Saharan Africa
+Kuwait                      Middle East and North Africa
+Austria                                   Western Europe
+Rwanda                                Sub-Saharan Africa
+Libya                       Middle East and North Africa
+Croatia                       Central and Eastern Europe
+Netherlands                               Western Europe
+Montenegro                    Central and Eastern Europe
+Burkina Faso                          Sub-Saharan Africa
+Dominican Republic           Latin America and Caribbean
+Sri Lanka                                     South Asia
+Greece                                    Western Europe
+Botswana                              Sub-Saharan Africa
+Honduras                     Latin America and Caribbean
+Taiwan Province of China                       East Asia
+Belgium                                   Western Europe
+Bolivia                      Latin America and Caribbean
+South Africa                          Sub-Saharan Africa
+Mongolia                                       East Asia
+Canada                             North America and ANZ
+Colombia                     Latin America and Caribbean
+Ecuador                      Latin America and Caribbean
+Tunisia                     Middle East and North Africa
+Macedonia                     Central and Eastern Europe
+Portugal                                  Western Europe
+Costa Rica                   Latin America and Caribbean
+Lesotho                               Sub-Saharan Africa
+Togo                                  Sub-Saharan Africa
+Albania                       Central and Eastern Europe
+Sierra Leone                          Sub-Saharan Africa
+Jordan                      Middle East and North Africa
+Guatemala                    Latin America and Caribbean
+Name: region, dtype: object
+</code></pre>
+</div>
+</div>
+<section id="step-6" class="cell markdown"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-effebc5e9940ed25&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<h3>Step 6.</h3>
+<p>Having split our datasets, we want to first train a classifier on our
+training data so that we can apply it to the testing data. One way of
+assessing the performance of a classifier is to compute its accuracy on
+the test data. That is, what fraction of the test data are correctly
+predicted by the classifier? Fortunately, <code>sklearn</code> provides
+a built-in function named <code>accuracy_score</code> that carries out
+this computation. We imported it above, and you can read more about it
+in the <a
+href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html?highlight=accuracy_score#sklearn.metrics.accuracy_score">documentation</a>.</p>
+<p>We also imported above the <code>svm</code> and <code>tree</code>
+submodules from sklearn. These provide support for Support Vector
+Machine (svm) and Decision Tree (tree) machine learning algorithms. For
+more information, review the <a
+href="https://scikit-learn.org/stable/modules/svm.html">Support Vector
+Machines (SVMs) documentation</a> and the <a
+href="https://scikit-learn.org/stable/modules/tree.html">Decision Trees
+documentation</a>. Under the hood, these are very different types of
+algorithms. Decision Trees try to formulate a series of yes/no questions
+based on the data that can distinguish the categories from one another.
+SVMs, on the other hand, use techniques from geometry to find cuts
+through the data space to separate different categories from one
+another. Understanding how these methods work in detail is beyond the
+scope of this exercise, but fortunately (despite the very different data
+structures and algorithms used internally) <code>sklearn</code> provides
+a uniform interface that lets us easily build these different sorts of
+classifiers and compare their performance.</p>
+<p>We will first consider SVMs, and then revisit the problem with
+Decision Trees.</p>
+<p>In the code cell below:</p>
+<ul>
+<li>create a new <code>svm.SVC()</code> object and assign it to the
+variable <code>clf1</code> — a call to <code>svm.SVC()</code> creates a
+Support Vector Classifier from the svm submodule, similar to what we did
+in the earlier exercise on hand-written digits</li>
+<li>call the <code>fit</code> method on <code>clf1</code> with the
+<code>x_train_scale</code> and <code>y_train</code> training data (i.e.,
+training the model to associate <code>x_train_scale</code> with
+<code>y_train</code>)</li>
+<li>call the <code>predict</code> method on <code>clf1</code> on the
+<code>x_test_scale</code> testing data and assign the result to the
+variable <code>predictions1</code>, in order to make predictions for
+those inputs</li>
+<li>call the <code>accuracy_score</code> function on the <code>y</code>
+testing data and the test predictions you generated and assign the
+result to the variable <code>score1</code></li>
+<li>print the value of <code>score1</code></li>
+</ul>
+<p>The accuracy score is a fraction between 0 and 1 indicating the
+fraction of predictions that match the true value in the test set.</p>
+</section>
+<section id="graded-cell" class="cell markdown">
+<h2>Graded Cell</h2>
+<p>This cell is worth 20% of the grade for this assignment.</p>
+</section>
+<div class="cell code" data-execution_count="59"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-fa487bf06d148c8d&quot;,&quot;locked&quot;:false,&quot;schema_version&quot;:3,&quot;solution&quot;:true,&quot;task&quot;:false}">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the SVC model</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>clf1 <span class="op">=</span> svm.SVC()</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Train the classifier with the training data</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>clf1.fit(x_train_scale, y_train)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="co"># predict on the test set</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>predictions1 <span class="op">=</span> clf1.predict(x_test_scale)</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the accuracy</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>score1 <span class="op">=</span> accuracy_score(y_test, predictions1)</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the accuracy</span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Accuracy score:&quot;</span>, score1)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Accuracy score: 0.6842105263157895
+</code></pre>
+</div>
+</div>
+<section id="step-7" class="cell markdown"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-1d88f7095ce3f275&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<h3>Step 7.</h3>
+<p>The accuracy score reported should be around 71% (0.71). This means
+that approximately 29% of the countries in the test set had their
+regions mispredicted. While that doesn't sound great, it could be that
+the WHR numerical data are not always completely predictive of region.
+One could imagine some countries that are "outliers" in a particular
+region, and more closely resemble other regions based on the WHR
+indicators.</p>
+<p>In the below code cell, please loop over all the predicted and true
+values in the test set, and prints out the country name and predicted
+region when the prediction is incorrect. An output line like:
+<code>Sri Lanka : South Asia -&gt; Sub-Saharan Africa</code> means that
+Sri Lanka is actually part of the South Asia region but was predicted to
+be part of Sub-Saharan Africa.</p>
+</section>
+<section id="graded-cell" class="cell markdown">
+<h2>Graded Cell</h2>
+<p>This cell is worth 10% of the grade for this assignment.</p>
+</section>
+<div class="cell code" data-execution_count="60">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>test_countries <span class="op">=</span> x_test.index</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">len</span>(y_test))</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(y_test)):</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    true_region <span class="op">=</span> y_test.iloc[i]</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>    pred_region <span class="op">=</span> predictions1[i]</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> true_region <span class="op">!=</span> pred_region:</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>        country <span class="op">=</span> test_countries[i]</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>country<span class="sc">}</span><span class="ss"> : </span><span class="sc">{</span>true_region<span class="sc">}</span><span class="ss"> -&gt; </span><span class="sc">{</span>pred_region<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>38
+Gabon : Sub-Saharan Africa -&gt; Middle East and North Africa
+United States : North America and ANZ -&gt; Western Europe
+Rwanda : Sub-Saharan Africa -&gt; Commonwealth of Independent States
+Montenegro : Central and Eastern Europe -&gt; Middle East and North Africa
+Sri Lanka : South Asia -&gt; Southeast Asia
+Greece : Western Europe -&gt; Central and Eastern Europe
+Taiwan Province of China : East Asia -&gt; Latin America and Caribbean
+Mongolia : East Asia -&gt; Commonwealth of Independent States
+Canada : North America and ANZ -&gt; Western Europe
+Macedonia : Central and Eastern Europe -&gt; Middle East and North Africa
+Portugal : Western Europe -&gt; Central and Eastern Europe
+Albania : Central and Eastern Europe -&gt; Middle East and North Africa
+</code></pre>
+</div>
+</div>
+<section id="model-evaluation--selection" class="cell markdown">
+<h1>Model evaluation &amp; selection</h1>
+</section>
+<section id="step-8" class="cell markdown"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-d8cd9531f6db2bc7&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<h3>Step 8.</h3>
+<p>It is often not obvious what specific algorithm will work best for a
+particular dataset, so it is good to be able to conduct numerical
+experiments to see how different methods perform (even if we might not
+fully understand <em>why</em> one method might work better than
+another). Because <code>sklearn</code> provides a consistent interface
+to very different types of underlying algorithms, it is easy to build
+additional classifiers to carry out these kinds of comparisons. Here, we
+will build a second classifier based on Decision Trees as supported by
+the <code>tree</code> module. Decision Tree algorithms have an element
+of randomness to them, so a Decision Tree can also be constructed with a
+specified <code>random_state</code> such as an integer that seeds the
+random number generator. Most of what we will do here is very similar to
+the code you wrote a few cells up when you built a SVC classifier.</p>
+<p>In the code cell below:</p>
+<ul>
+<li>Create a new <code>tree.DecisionTreeClassifier()</code> object with
+the optional argument <code>random_state=0</code>, and assign it to the
+variable <code>clf2</code> (<code>clf2</code> stands for "classifier
+number 2", so that we can compare with <code>clf1</code> above).</li>
+<li>Call the <code>fit</code> method on <code>clf2</code> with the
+<code>x_train_scale</code> and <code>y_train</code> training data (i.e.,
+training the model to associate <code>x_train_scale</code> with
+<code>y_train</code>).</li>
+<li>Call the <code>predict</code> method on <code>clf2</code> on the
+<code>x_test_scale</code> testing data and assign the result to the
+variable <code>predictions2</code>, in order to make predictions for
+those inputs.</li>
+<li>Call the <code>accuracy_score</code> function on the
+<code>y_test</code> testing data and the test predictions you generated
+and assign the result to the variable <code>score2</code>.</li>
+<li>Print the value of <code>score2</code>.</li>
+</ul>
+</section>
+<section id="graded-cell" class="cell markdown">
+<h2>Graded Cell</h2>
+<p>This cell is worth 10% of the grade for this assignment.</p>
+</section>
+<div class="cell code" data-execution_count="62"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-da49b9de6d360166&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the classifier with a fixed random seed for reproducibility</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>clf2 <span class="op">=</span> tree.DecisionTreeClassifier(random_state<span class="op">=</span><span class="dv">87</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Train the decision tree classifier on the training data</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>clf2.fit(x_train_scale, y_train)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Predict using the trained model on the test set</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>predictions2 <span class="op">=</span> clf2.predict(x_test_scale)</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Evaluate how well it performed</span></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>score2 <span class="op">=</span> accuracy_score(y_test, predictions2)</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a><span class="co"># print the score</span></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Decision Tree Accuracy:&quot;</span>, score2)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Decision Tree Accuracy: 0.5789473684210527
+</code></pre>
+</div>
+</div>
+<section id="step-9" class="cell markdown"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-0d4bfe43911002ff&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<h3>Step 9.</h3>
+<p>We ran two classifiers — <code>clf1</code> (SVM) and
+<code>clf2</code> (Decision Tree) — on a particular random
+<code>train_test_split</code> of the full dataset. We can't really reach
+any conclusions about the relative performance of the two methods just
+by considering one split. Given that <code>train_test_split</code> can
+produce different random splits, let's write a little code to compare
+the two classifiers for different splits.</p>
+<p>In the code cell below, write some code to do the following:</p>
+<ul>
+<li>Write a Python <code>for</code> loop so that you can run through the
+loop 20 times</li>
+<li>Within each pass through the loop, do the following:
+<ul>
+<li>Call <code>test_train_split</code> on <code>x</code> and
+<code>y</code> to get new random instances of <code>x_train</code>,
+<code>x_test</code>, <code>y_train</code>, <code>y_test</code> -- in
+this case, you don't want to pass in a value for
+<code>random_state</code> since you want to get different random splits
+each time</li>
+<li>Fit StandardScaler to <code>x_train</code>, and use it to transform
+both <code>x_train</code> and <code>x_test</code> into
+<code>x_train_scaled</code> and <code>x_train_test</code></li>
+<li>Fit each of the classifiers <code>clf1</code> and <code>clf2</code>
+to <code>x_train_scaled</code> and <code>y_train</code></li>
+<li>Run predictions on each of the classifiers <code>clf1</code> and
+<code>clf2</code> on the <code>x_test_scaled</code> and
+<code>y_test</code> testing data</li>
+<li>Compute the accuracy_score of each of the two classifiers on the
+test data and the test predictions you generated</li>
+<li>Print the score of each classifier, as well as their difference
+(hint: <code>print(score1, score2, score1-score2)</code> to get just one
+line of output per iteration of the loop)</li>
+</ul></li>
+</ul>
+<p>Execute the code you have written. You should see it run through the
+loop 20 times, for different random data splits. While the overall
+performance varies from run to run, you should probably see that the SVC
+classifier (<code>clf1</code>) generally performs a little bit better
+than the DecisionTree classifier (<code>clf2</code>).</p>
+</section>
+<section id="graded-cell" class="cell markdown">
+<h2>Graded Cell</h2>
+<p>This cell is worth 10% of the grade for this assignment.</p>
+</section>
+<div class="cell code" data-execution_count="63"
+data-nbgrader="{&quot;grade&quot;:true,&quot;grade_id&quot;:&quot;cell-4b11d4e6c2398273&quot;,&quot;locked&quot;:false,&quot;points&quot;:0,&quot;schema_version&quot;:3,&quot;solution&quot;:true,&quot;task&quot;:false}">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.tree <span class="im">import</span> DecisionTreeClassifier</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Create classifier</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>clf1 <span class="op">=</span> svm.SVC()</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>clf2 <span class="op">=</span> DecisionTreeClassifier()</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop for 20 different random splits</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">20</span>):</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># random train-test split (without random state to ensure variability)</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    x_train, x_test, y_train, y_test <span class="op">=</span> train_test_split(</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>        x_scaled,</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>        y,</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>        test_size<span class="op">=</span><span class="fl">0.25</span>,</span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>        shuffle<span class="op">=</span><span class="va">True</span></span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>    <span class="co"># fit scaler on training data only</span></span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>    scaler <span class="op">=</span> StandardScaler()</span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>    scaler.fit(x_train)</span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Transform both training and test data</span></span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>    x_train_scaled <span class="op">=</span> scaler.transform(x_train)</span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>    x_test_scaled <span class="op">=</span> scaler.transform(x_test)</span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Train both classifier</span></span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a>    clf1.fit(x_train_scaled, y_train)</span>
+<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a>    clf2.fit(x_train_scaled, y_train)</span>
+<span id="cb17-28"><a href="#cb17-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-29"><a href="#cb17-29" aria-hidden="true" tabindex="-1"></a>    <span class="co"># make predictions on test data</span></span>
+<span id="cb17-30"><a href="#cb17-30" aria-hidden="true" tabindex="-1"></a>    preds1 <span class="op">=</span> clf1.predict(x_test_scaled)</span>
+<span id="cb17-31"><a href="#cb17-31" aria-hidden="true" tabindex="-1"></a>    preds2 <span class="op">=</span> clf2.predict(x_test_scaled)</span>
+<span id="cb17-32"><a href="#cb17-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-33"><a href="#cb17-33" aria-hidden="true" tabindex="-1"></a>    <span class="co"># calculate accuracy</span></span>
+<span id="cb17-34"><a href="#cb17-34" aria-hidden="true" tabindex="-1"></a>    score1 <span class="op">=</span> accuracy_score(y_test, preds1)</span>
+<span id="cb17-35"><a href="#cb17-35" aria-hidden="true" tabindex="-1"></a>    score2 <span class="op">=</span> accuracy_score(y_test, preds2)</span>
+<span id="cb17-36"><a href="#cb17-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-37"><a href="#cb17-37" aria-hidden="true" tabindex="-1"></a>    <span class="co"># print scores and their differences</span></span>
+<span id="cb17-38"><a href="#cb17-38" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;SVM: </span><span class="sc">{</span>score1<span class="sc">:.3f}</span><span class="ss">, Decision Tree: </span><span class="sc">{</span>score2<span class="sc">:.3f}</span><span class="ss">, Difference: </span><span class="sc">{</span>score1 <span class="op">-</span> score2<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb17-39"><a href="#cb17-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-40"><a href="#cb17-40" aria-hidden="true" tabindex="-1"></a>    </span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>SVM: 0.658, Decision Tree: 0.579, Difference: 0.079
+SVM: 0.579, Decision Tree: 0.526, Difference: 0.053
+SVM: 0.632, Decision Tree: 0.605, Difference: 0.026
+SVM: 0.684, Decision Tree: 0.605, Difference: 0.079
+SVM: 0.658, Decision Tree: 0.737, Difference: -0.079
+SVM: 0.684, Decision Tree: 0.632, Difference: 0.053
+SVM: 0.632, Decision Tree: 0.632, Difference: 0.000
+SVM: 0.632, Decision Tree: 0.605, Difference: 0.026
+SVM: 0.684, Decision Tree: 0.658, Difference: 0.026
+SVM: 0.632, Decision Tree: 0.711, Difference: -0.079
+SVM: 0.632, Decision Tree: 0.447, Difference: 0.184
+SVM: 0.579, Decision Tree: 0.500, Difference: 0.079
+SVM: 0.605, Decision Tree: 0.658, Difference: -0.053
+SVM: 0.632, Decision Tree: 0.632, Difference: 0.000
+SVM: 0.579, Decision Tree: 0.579, Difference: 0.000
+SVM: 0.526, Decision Tree: 0.500, Difference: 0.026
+SVM: 0.658, Decision Tree: 0.579, Difference: 0.079
+SVM: 0.711, Decision Tree: 0.658, Difference: 0.053
+SVM: 0.605, Decision Tree: 0.632, Difference: -0.026
+SVM: 0.658, Decision Tree: 0.684, Difference: -0.026
+</code></pre>
+</div>
+</div>
+<section id="step-10" class="cell markdown"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-01de5a27c9f1842e&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<h3>Step 10.</h3>
+<p>In the last code cell, you printed out the scores of the two
+classifiers for a small number of random splits, and examined the
+numerical output. Perhaps you'd rather generate a visual summary of the
+relative performance of the two classifiers, for a larger number of
+runs.</p>
+<p>In the code cell below, copy and paste the code you wrote above and
+modify it to do the following:</p>
+<ul>
+<li>prior to entering the <code>for</code> loop, initialize two empty
+lists named <code>all_scores1</code> and <code>all_scores2</code> that
+will be used to collect the scores of each classifier each time through
+the loop</li>
+<li>run through the loop 1000 times instead of 20 as before</li>
+<li>append the scores (<code>score1</code> and <code>score2</code>) to
+each of the lists used to contain all the scores</li>
+<li>remove the print statement so that you don't get 1000 annoying print
+statements when you run the code</li>
+<li>once the loop is finished, use the <code>plt.hist</code> function to
+plot histograms for <code>all_scores1</code> and
+<code>all_scores2</code> together in the same plot
+<ul>
+<li>you can accomplish this by making two successive calls to the
+histogram function within the same code cell</li>
+<li>you might want to add options to change the number of bins for the
+histograms</li>
+<li>you should change the alpha value (opacity) of the histogram plots
+so that you can see both distributions, since at full opacity, the
+second one plotted will obscure the first one</li>
+<li>you should use the <code>label</code> option to label the
+datasets</li>
+</ul></li>
+<li>After making your two calls to <code>plt.hist</code>, you should
+call <code>plt.legend</code> to produce a legend on the plot that will
+identify the two datasets based on the label options that you added to
+your <code>plt.hist</code> calls</li>
+</ul>
+</section>
+<section id="graded-cell" class="cell markdown">
+<h2>Graded Cell</h2>
+<p>This cell is worth 20% of the grade for this assignment.</p>
+</section>
+<div class="cell code" data-execution_count="48"
+data-nbgrader="{&quot;grade&quot;:true,&quot;grade_id&quot;:&quot;cell-28a13e824292104e&quot;,&quot;locked&quot;:false,&quot;points&quot;:0,&quot;schema_version&quot;:3,&quot;solution&quot;:true,&quot;task&quot;:false}"
+data-scrolled="false">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize empty lists to collect scores</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>all_scores1 <span class="op">=</span> []</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>all_scores2 <span class="op">=</span> []</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Create classifiers</span></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>clf1 <span class="op">=</span> svm.SVC()</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>clf2 <span class="op">=</span> DecisionTreeClassifier()</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1000</span>):</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Random train-test split (no random_state)</span></span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>    x_train, x_test, y_train, y_test <span class="op">=</span> train_test_split(</span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>        x_scaled, </span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>        y, </span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>        test_size<span class="op">=</span><span class="fl">0.25</span>, </span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>        shuffle<span class="op">=</span><span class="va">True</span></span>
+<span id="cb19-18"><a href="#cb19-18" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb19-19"><a href="#cb19-19" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb19-20"><a href="#cb19-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Fit scaler on training data only</span></span>
+<span id="cb19-21"><a href="#cb19-21" aria-hidden="true" tabindex="-1"></a>    scaler <span class="op">=</span> StandardScaler()</span>
+<span id="cb19-22"><a href="#cb19-22" aria-hidden="true" tabindex="-1"></a>    scaler.fit(x_train)</span>
+<span id="cb19-23"><a href="#cb19-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-24"><a href="#cb19-24" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Scale training and test data</span></span>
+<span id="cb19-25"><a href="#cb19-25" aria-hidden="true" tabindex="-1"></a>    x_train_scaled <span class="op">=</span> scaler.transform(x_train)</span>
+<span id="cb19-26"><a href="#cb19-26" aria-hidden="true" tabindex="-1"></a>    x_test_scaled <span class="op">=</span> scaler.transform(x_test)</span>
+<span id="cb19-27"><a href="#cb19-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-28"><a href="#cb19-28" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Train classifiers</span></span>
+<span id="cb19-29"><a href="#cb19-29" aria-hidden="true" tabindex="-1"></a>    clf1.fit(x_train_scaled, y_train)</span>
+<span id="cb19-30"><a href="#cb19-30" aria-hidden="true" tabindex="-1"></a>    clf2.fit(x_train_scaled, y_train)</span>
+<span id="cb19-31"><a href="#cb19-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-32"><a href="#cb19-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Predict on test data</span></span>
+<span id="cb19-33"><a href="#cb19-33" aria-hidden="true" tabindex="-1"></a>    preds1 <span class="op">=</span> clf1.predict(x_test_scaled)</span>
+<span id="cb19-34"><a href="#cb19-34" aria-hidden="true" tabindex="-1"></a>    preds2 <span class="op">=</span> clf2.predict(x_test_scaled)</span>
+<span id="cb19-35"><a href="#cb19-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-36"><a href="#cb19-36" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Compute accuracy</span></span>
+<span id="cb19-37"><a href="#cb19-37" aria-hidden="true" tabindex="-1"></a>    score1 <span class="op">=</span> accuracy_score(y_test, preds1)</span>
+<span id="cb19-38"><a href="#cb19-38" aria-hidden="true" tabindex="-1"></a>    score2 <span class="op">=</span> accuracy_score(y_test, preds2)</span>
+<span id="cb19-39"><a href="#cb19-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-40"><a href="#cb19-40" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Collect scores</span></span>
+<span id="cb19-41"><a href="#cb19-41" aria-hidden="true" tabindex="-1"></a>    all_scores1.append(score1)</span>
+<span id="cb19-42"><a href="#cb19-42" aria-hidden="true" tabindex="-1"></a>    all_scores2.append(score2)</span>
+<span id="cb19-43"><a href="#cb19-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-44"><a href="#cb19-44" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot histograms</span></span>
+<span id="cb19-45"><a href="#cb19-45" aria-hidden="true" tabindex="-1"></a>plt.hist(all_scores1, bins<span class="op">=</span><span class="dv">20</span>, alpha<span class="op">=</span><span class="fl">0.6</span>, label<span class="op">=</span><span class="st">&#39;SVM Accuracy&#39;</span>)</span>
+<span id="cb19-46"><a href="#cb19-46" aria-hidden="true" tabindex="-1"></a>plt.hist(all_scores2, bins<span class="op">=</span><span class="dv">20</span>, alpha<span class="op">=</span><span class="fl">0.6</span>, label<span class="op">=</span><span class="st">&#39;Decision Tree Accuracy&#39;</span>)</span>
+<span id="cb19-47"><a href="#cb19-47" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Accuracy&#39;</span>)</span>
+<span id="cb19-48"><a href="#cb19-48" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Frequency&#39;</span>)</span>
+<span id="cb19-49"><a href="#cb19-49" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Accuracy Distributions over 1000 Random Splits&#39;</span>)</span>
+<span id="cb19-50"><a href="#cb19-50" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb19-51"><a href="#cb19-51" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb19-52"><a href="#cb19-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-53"><a href="#cb19-53" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_582bb05784a4489b9ee942ef3f38a64d/2b4ffff22f8721d04d71a77c26329d71eeef043e.png" /></p>
+</div>
+</div>
+<div class="cell markdown">
+
+</div>
+<section id="just-scratching-the-surface" class="cell markdown"
+data-nbgrader="{&quot;grade&quot;:false,&quot;grade_id&quot;:&quot;cell-5096838c0f9fe754&quot;,&quot;locked&quot;:true,&quot;schema_version&quot;:3,&quot;solution&quot;:false,&quot;task&quot;:false}">
+<h3>Just scratching the surface...</h3>
+<p>This is just the start of what you can do with scikit-learn. It is
+clear from the documentation that there are many different methods and
+algorithms for classification that are supported by the package, as well
+as different ways of optimizing and assessing the performance of
+different algorithms. If you are motivated to explore further, feel free
+to continue below by opening more code cells and using the scikit-learn
+documentation to guide some further exploration.</p>
+</section>
+<div class="cell markdown">
+<p>To gain deeper insights into the model performance, I extended the
+comparison by introducing another widely used and practical algorithm —
+Gaussian Naive Bayes (GaussianNB). Including this model allowed for a
+broader evaluation of the prediction results and helped validate the
+findings from the previous models more effectively.</p>
+</div>
+<div class="cell code" data-execution_count="50">
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.naive_bayes <span class="im">import</span> GaussianNB</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn <span class="im">import</span> svm</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> accuracy_score</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Create classifiers</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>clf1 <span class="op">=</span> svm.SVC()</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>clf2 <span class="op">=</span> GaussianNB()</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop for 20 different random splits</span></span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">20</span>):</span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># random train-test split (without random state to ensure variability)</span></span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>    x_train, x_test, y_train, y_test <span class="op">=</span> train_test_split(</span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>        x_scaled,</span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>        y,</span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>        test_size<span class="op">=</span><span class="fl">0.25</span>,</span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>        shuffle<span class="op">=</span><span class="va">True</span></span>
+<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># fit scaler on training data only</span></span>
+<span id="cb20-22"><a href="#cb20-22" aria-hidden="true" tabindex="-1"></a>    scaler <span class="op">=</span> StandardScaler()</span>
+<span id="cb20-23"><a href="#cb20-23" aria-hidden="true" tabindex="-1"></a>    scaler.fit(x_train)</span>
+<span id="cb20-24"><a href="#cb20-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-25"><a href="#cb20-25" aria-hidden="true" tabindex="-1"></a>    <span class="co"># transform both training and test data</span></span>
+<span id="cb20-26"><a href="#cb20-26" aria-hidden="true" tabindex="-1"></a>    x_train_scaled <span class="op">=</span> scaler.transform(x_train)</span>
+<span id="cb20-27"><a href="#cb20-27" aria-hidden="true" tabindex="-1"></a>    x_test_scaled <span class="op">=</span> scaler.transform(x_test)</span>
+<span id="cb20-28"><a href="#cb20-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-29"><a href="#cb20-29" aria-hidden="true" tabindex="-1"></a>    <span class="co"># train both classifiers</span></span>
+<span id="cb20-30"><a href="#cb20-30" aria-hidden="true" tabindex="-1"></a>    clf1.fit(x_train_scaled, y_train)</span>
+<span id="cb20-31"><a href="#cb20-31" aria-hidden="true" tabindex="-1"></a>    clf2.fit(x_train_scaled, y_train)</span>
+<span id="cb20-32"><a href="#cb20-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-33"><a href="#cb20-33" aria-hidden="true" tabindex="-1"></a>    <span class="co"># make predictions on test data</span></span>
+<span id="cb20-34"><a href="#cb20-34" aria-hidden="true" tabindex="-1"></a>    preds1 <span class="op">=</span> clf1.predict(x_test_scaled)</span>
+<span id="cb20-35"><a href="#cb20-35" aria-hidden="true" tabindex="-1"></a>    preds2 <span class="op">=</span> clf2.predict(x_test_scaled)</span>
+<span id="cb20-36"><a href="#cb20-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-37"><a href="#cb20-37" aria-hidden="true" tabindex="-1"></a>    <span class="co"># calculate accuracy</span></span>
+<span id="cb20-38"><a href="#cb20-38" aria-hidden="true" tabindex="-1"></a>    score1 <span class="op">=</span> accuracy_score(y_test, preds1)</span>
+<span id="cb20-39"><a href="#cb20-39" aria-hidden="true" tabindex="-1"></a>    score2 <span class="op">=</span> accuracy_score(y_test, preds2)</span>
+<span id="cb20-40"><a href="#cb20-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-41"><a href="#cb20-41" aria-hidden="true" tabindex="-1"></a>    <span class="co"># print scores and their difference</span></span>
+<span id="cb20-42"><a href="#cb20-42" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;SVM: </span><span class="sc">{</span>score1<span class="sc">:.3f}</span><span class="ss">, GaussianNB: </span><span class="sc">{</span>score2<span class="sc">:.3f}</span><span class="ss">, Difference: </span><span class="sc">{</span>score1 <span class="op">-</span> score2<span class="sc">:.3f}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>SVM: 0.658, GaussianNB: 0.684, Difference: -0.026
+SVM: 0.684, GaussianNB: 0.684, Difference: 0.000
+SVM: 0.605, GaussianNB: 0.711, Difference: -0.105
+SVM: 0.711, GaussianNB: 0.658, Difference: 0.053
+SVM: 0.737, GaussianNB: 0.737, Difference: 0.000
+SVM: 0.711, GaussianNB: 0.711, Difference: 0.000
+SVM: 0.605, GaussianNB: 0.605, Difference: 0.000
+SVM: 0.605, GaussianNB: 0.684, Difference: -0.079
+SVM: 0.553, GaussianNB: 0.684, Difference: -0.132
+SVM: 0.684, GaussianNB: 0.684, Difference: 0.000
+SVM: 0.632, GaussianNB: 0.658, Difference: -0.026
+SVM: 0.632, GaussianNB: 0.711, Difference: -0.079
+SVM: 0.816, GaussianNB: 0.579, Difference: 0.237
+SVM: 0.684, GaussianNB: 0.763, Difference: -0.079
+SVM: 0.553, GaussianNB: 0.605, Difference: -0.053
+SVM: 0.711, GaussianNB: 0.684, Difference: 0.026
+SVM: 0.684, GaussianNB: 0.711, Difference: -0.026
+SVM: 0.737, GaussianNB: 0.816, Difference: -0.079
+SVM: 0.605, GaussianNB: 0.605, Difference: 0.000
+SVM: 0.658, GaussianNB: 0.684, Difference: -0.026
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="49">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn <span class="im">import</span> svm</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.naive_bayes <span class="im">import</span> GaussianNB</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> accuracy_score</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize empty lists to collect scores</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>all_scores_svm <span class="op">=</span> []</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>all_scores_nb <span class="op">=</span> []</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Create classifiers</span></span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>clf1 <span class="op">=</span> svm.SVC()</span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>clf2 <span class="op">=</span> GaussianNB()</span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop through 1000 different random splits</span></span>
+<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1000</span>):</span>
+<span id="cb22-18"><a href="#cb22-18" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Random train-test split (note lowercase x and y)</span></span>
+<span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a>    x_train, x_test, y_train, y_test <span class="op">=</span> train_test_split(</span>
+<span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a>        x_scaled, </span>
+<span id="cb22-21"><a href="#cb22-21" aria-hidden="true" tabindex="-1"></a>        y, </span>
+<span id="cb22-22"><a href="#cb22-22" aria-hidden="true" tabindex="-1"></a>        test_size<span class="op">=</span><span class="fl">0.2</span>,</span>
+<span id="cb22-23"><a href="#cb22-23" aria-hidden="true" tabindex="-1"></a>        shuffle<span class="op">=</span><span class="va">True</span></span>
+<span id="cb22-24"><a href="#cb22-24" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb22-25"><a href="#cb22-25" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb22-26"><a href="#cb22-26" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Scale the data</span></span>
+<span id="cb22-27"><a href="#cb22-27" aria-hidden="true" tabindex="-1"></a>    scaler <span class="op">=</span> StandardScaler()</span>
+<span id="cb22-28"><a href="#cb22-28" aria-hidden="true" tabindex="-1"></a>    x_train_scaled <span class="op">=</span> scaler.fit_transform(x_train)</span>
+<span id="cb22-29"><a href="#cb22-29" aria-hidden="true" tabindex="-1"></a>    x_test_scaled <span class="op">=</span> scaler.transform(x_test)</span>
+<span id="cb22-30"><a href="#cb22-30" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb22-31"><a href="#cb22-31" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Train classifiers</span></span>
+<span id="cb22-32"><a href="#cb22-32" aria-hidden="true" tabindex="-1"></a>    clf1.fit(x_train_scaled, y_train)</span>
+<span id="cb22-33"><a href="#cb22-33" aria-hidden="true" tabindex="-1"></a>    clf2.fit(x_train_scaled, y_train)</span>
+<span id="cb22-34"><a href="#cb22-34" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb22-35"><a href="#cb22-35" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Predict on test data</span></span>
+<span id="cb22-36"><a href="#cb22-36" aria-hidden="true" tabindex="-1"></a>    preds1 <span class="op">=</span> clf1.predict(x_test_scaled)</span>
+<span id="cb22-37"><a href="#cb22-37" aria-hidden="true" tabindex="-1"></a>    preds2 <span class="op">=</span> clf2.predict(x_test_scaled)</span>
+<span id="cb22-38"><a href="#cb22-38" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb22-39"><a href="#cb22-39" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Compute accuracy</span></span>
+<span id="cb22-40"><a href="#cb22-40" aria-hidden="true" tabindex="-1"></a>    score1 <span class="op">=</span> accuracy_score(y_test, preds1)</span>
+<span id="cb22-41"><a href="#cb22-41" aria-hidden="true" tabindex="-1"></a>    score2 <span class="op">=</span> accuracy_score(y_test, preds2)</span>
+<span id="cb22-42"><a href="#cb22-42" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb22-43"><a href="#cb22-43" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Append scores</span></span>
+<span id="cb22-44"><a href="#cb22-44" aria-hidden="true" tabindex="-1"></a>    all_scores_svm.append(score1)</span>
+<span id="cb22-45"><a href="#cb22-45" aria-hidden="true" tabindex="-1"></a>    all_scores_nb.append(score2)</span>
+<span id="cb22-46"><a href="#cb22-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-47"><a href="#cb22-47" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot histogram of both models&#39; accuracy</span></span>
+<span id="cb22-48"><a href="#cb22-48" aria-hidden="true" tabindex="-1"></a>plt.hist(all_scores_svm, bins<span class="op">=</span><span class="dv">20</span>, alpha<span class="op">=</span><span class="fl">0.6</span>, label<span class="op">=</span><span class="st">&#39;SVM Accuracy&#39;</span>)</span>
+<span id="cb22-49"><a href="#cb22-49" aria-hidden="true" tabindex="-1"></a>plt.hist(all_scores_nb, bins<span class="op">=</span><span class="dv">20</span>, alpha<span class="op">=</span><span class="fl">0.6</span>, label<span class="op">=</span><span class="st">&#39;GaussianNB Accuracy&#39;</span>)</span>
+<span id="cb22-50"><a href="#cb22-50" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Accuracy&#39;</span>)</span>
+<span id="cb22-51"><a href="#cb22-51" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Frequency&#39;</span>)</span>
+<span id="cb22-52"><a href="#cb22-52" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Accuracy Distribution: SVM vs GaussianNB (1000 splits)&#39;</span>)</span>
+<span id="cb22-53"><a href="#cb22-53" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb22-54"><a href="#cb22-54" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_582bb05784a4489b9ee942ef3f38a64d/8853d8ac7e57e97db1175fa20d8da7e12a638bf0.png" /></p>
+</div>
+</div>
+<div class="cell markdown">
+<p>Analysis Summary:</p>
+<p>The third algorithm, Gaussian Naive Bayes (GaussianNB), demonstrates
+an accuracy level comparable to that of the Support Vector Machine (SVM)
+classifier. When comparing all three models — SVM, Decision Tree, and
+GaussianNB — the results indicate that SVM and GaussianNB consistently
+outperform the Decision Tree classifier on this dataset. This suggests
+that the underlying distribution of the data may align better with the
+assumptions made by SVM and GaussianNB, making them more suitable
+choices for this classification task.</p>
+</div>
+<section id="what-to-submit" class="cell markdown">
+<h1>What to Submit?</h1>
+<p>Please run your Jupyter Notebook first to generate outputs for each
+code cell and then export the report as a HTML file by clicking the
+following links (File -&gt; Download as -&gt; HTML (.html)). Please zip
+both the Jupyter Notebook and the HTML file and submit your ZIP
+file.</p>
+</section>
+</body>
+</html>
